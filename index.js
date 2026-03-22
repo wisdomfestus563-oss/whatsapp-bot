@@ -60,7 +60,7 @@ async function askAI(userId, text) {
   const res = await httpsPost(
     'api.groq.com', 
     '/openai/v1/chat/completions',
-    { model: 'llama3-8b-8192', messages: memory[userId], max_tokens: 500 },
+    { model: 'llama-3.3-70b-versatile', messages: memory[userId], max_tokens: 500 },
     { Authorization: `Bearer ${GROQ_KEY}` }
   );
   
