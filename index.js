@@ -53,6 +53,7 @@ const server = http.createServer((req, res) => {
   req.on('data', c => body += c);
   req.on('end', async () => {
     res.end('ok');
+    if (!body || body.trim() === '') return;
     try {
       const data = JSON.parse(body);
       const msgs = data.messages || [];
