@@ -477,3 +477,4 @@ async function startBot() {
         if (msgType === 'imageMessage') {
           const buffer = await sock.downloadMediaMessage(msg);
           fs.writeFileSync('saved/media/' + Date.now() + '_' + jid.replace(/[^a-z0-9]/gi,'') + '_img.bin', buffer);
+          if (buffer) {
