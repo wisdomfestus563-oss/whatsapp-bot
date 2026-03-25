@@ -1,1 +1,17 @@
-
+{
+  "name": "whatsapp-bot",
+  "version": "1.0.0",
+  "description": "Wise Bot God Tier",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.5.0",
+    "mongodb": "^6.3.0",
+    "pino": "^10.3.1",
+    "qrcode": "^1.5.4"
+  }
+}
