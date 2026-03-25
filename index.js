@@ -1,4 +1,12 @@
-// WISE BOT - GOD MODE (ALL-IN-ONE)
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+    res.send('WISE BOT IS ALIVE 😈');
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log("Server running on port " + PORT));// WISE BOT - GOD MODE (ALL-IN-ONE)
 
 const makeWASocket = require('@whiskeysockets/baileys').default;
 const { useMultiFileAuthState, DisconnectReason } = require('@whiskeysockets/baileys');
